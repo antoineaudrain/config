@@ -13,7 +13,7 @@
 #sudo apt-get update && sudo apt-get install yarn
 #
 #curl https://get.docker.com | sudo sh
-#sudo usermod -aG docker antoine
+#sudo usermod -aG docker $USER
 #newgrp docker
 #
 #curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
