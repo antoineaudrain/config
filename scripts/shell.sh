@@ -8,3 +8,5 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 sudo apt-get install -y fonts-powerline
 
 cp ./zsh/zshrc ~/.zshrc
+
+chsh -s /bin/zsh
