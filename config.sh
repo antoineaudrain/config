@@ -36,14 +36,14 @@ done
 
 if [ -z "$p_flag" ] && [ -z "$s_flag" ] && [ -z "$w_flag" ]
 then
-     install_packages
-     configure_shell
-     configure_workspace
+     ./scripts/install_packages
+     ./scripts/configure_shell
+     ./scripts/configure_workspace
      exit 0
 fi
 
-[ -n "$p_flag" ] && install_packages
-[ -n "$s_flag" ] && configure_shell
-[ -n "$w_flag" ] && configure_workspace
+[ -n "$p_flag" ] && ./scripts/install_packages
+[ -n "$s_flag" ] && ./scripts/configure_shell
+[ -n "$w_flag" ] && ./scripts/configure_workspace
 
 exit 0
