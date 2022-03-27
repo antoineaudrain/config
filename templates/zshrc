@@ -1,0 +1,20 @@
+plugins=(
+  docker
+  dotenv
+  git
+  npm
+)
+
+export ZSH="$HOME/.oh-my-zsh"
+export ZSH_THEME="agnoster"
+export ENABLE_CORRECTION="false"
+
+source $ZSH/oh-my-zsh.sh
+
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='mvim'
+fi
+
+export SSH_KEY_PATH=~/.ssh/id_rsa
